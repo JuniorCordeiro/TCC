@@ -1,0 +1,50 @@
+<ion-view title='Cadastrar Veículo <a ui-sref="home"><img class="title-image" src="img/logoAV5.png" /></a>'id="page14" style="background-color:#E2D9D9;">
+    <ion-content padding="true" class="has-header">
+        <div>
+            <div class="list">
+                <label class="item item-input item-select" style="background-color: #f0f0f0">
+                    <div class="input-label">
+                        Marca
+                    </div>
+                    <select style="background-color: #f0f0f0" ng-options="s.nome for s in marcas track by s.codigo" ng-model="marcaSelecionado">
+                        <option value=""></option>
+                    </select>
+                </label>
+            </div>
+            <div class="list">
+                <label class="item item-input item-select" style="background-color: #f0f0f0">
+                    <div class="input-label">
+                        Modelo
+                    </div>
+                    <select style="background-color: #f0f0f0" ng-options="p.nome for p in marcaSelecionado. modelos track by p.codigo" ng-model=" modeloSelecionado">
+                        <option value=""></option>
+                       
+                    </select>
+                </label>
+            </div>
+
+
+            <div class="list list-inset">
+                <label class="item item-input" style="background-color: #f0f0f0">
+                    <input type="text" placeholder="Ano" ng-model="anoVeiculo">
+                </label>
+                <label class="item item-input" style="background-color: #f0f0f0">
+                    <input type="text" placeholder="Placa" ng-model="placaVeiculo">
+                </label>
+                 <label class="item item-input" style="background-color: #f0f0f0">
+                    <input type="text" placeholder="Renavam" ng-model="renavam">
+                </label>
+            </div>
+        </div>
+        <a ui-sref="tabsController.home_tab1" id="adicionarVeCulo-button16" style="color:#FFFFFF;" class="button button-positive  button-block">Adicionar</a>
+
+<h3>Marca: {{marcaSelecionado.nome}}</h3>
+<h3>Modelo: {{modeloSelecionado.nome}}</h3>
+<h3>Ano: {{anoVeiculo}}</h3>
+<h3>Placa: {{placaVeiculo}}</h3>
+    
+   
+
+    </ion-content>
+</ion-view>
+
