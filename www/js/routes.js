@@ -8,7 +8,7 @@ angular.module('app.routes', ['ionicUIRouter'])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
-  
+  //Testandi GIT
 
       /* 
     The IonicUIRouter.js UI-Router Modification is being used for this route.
